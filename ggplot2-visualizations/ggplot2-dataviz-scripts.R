@@ -1,5 +1,18 @@
 # ggplot2 Visualizations
 
+#Courses and self-study
+#Height of chimpanzees nests
+
+ggplot(data=nests, aes(x=x)) +
+  geom_histogram(breaks=seq(min(nests$x),max(nests$x),1),fill='darkturquoise')+
+  theme(text=element_text(size=12))+labs(title = "Height of chimpanzees nests")+
+xlim(c(0,50))+
+  xlab('Height (m)')
+
+#Height of E. cloeziana trees measured in plantations with different density levels 
+ggplot(d, mapping = aes(x=stocking, y=hgt))+geom_boxplot()+labs(title = "Height by density levels",
+                                                                subtitle = "Height of E. cloeziana trees measured in plantations with different density levels")
+
 # CYCLISTIC PROJECT
 # Midpoint ride length by subscription type
 
@@ -46,7 +59,7 @@ all_trips%>%
   summarize(total = n())%>%
   ggplot(mapping = aes(x=date, y=total, fill=member_casual))+geom_area()+
   scale_x_date(date_labels = "%y/%m",  date_breaks = "1 month")+
-  labs(title = "NÂº of members and casual riders over the year", fill="Subscription type")+ylab("Number of rides")+xlab("Year and Month")+
+  labs(title = "Nº of members and casual riders over the year", fill="Subscription type")+ylab("Number of rides")+xlab("Year and Month")+
   scale_fill_manual(values = c("casual" = "#72a8d5",
                                "member" = "#96cd69"), labels = c("Casual rider", "Annual member"))+ theme_light()
 
