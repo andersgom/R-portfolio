@@ -2,6 +2,14 @@
 
 This is a collection of visualizations from past projects made in R with the `ggplot2` package.
 
+<details><summary>Courses and self study</summary>
+
+![](/ggplot2-visualizations/images/selfstudy-density.png)
+
+![](/ggplot2-visualizations/images/selfstudy-boxplot.png)
+
+</details>
+
 <details><summary>Cyclistic project</summary>
 
 ![](/ggplot2-visualizations/images/cyclistic-viz%20(1).png)
