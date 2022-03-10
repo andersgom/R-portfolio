@@ -8,3 +8,5 @@ This repository holds all the code from my personal R projects.
         - Packages: `tidyverse`, `dplyr`, `skimr` and `janitor`
         - Clean column names
         - Convert data types
+
+- Data visualization: Visualizations from past projects using `ggplot2`. Check this [link](/ggplot2-visualizations).
